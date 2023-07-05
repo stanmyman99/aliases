@@ -8,3 +8,9 @@ sudo make dkms_install
 # sudo mv /var/lib/8812au /var/lib/8812au-orig
 # sudo make dkms_install
 
+# Show available wifi
+#
+nmcli dev wifi
+
+
+
