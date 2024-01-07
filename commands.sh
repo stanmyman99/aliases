@@ -78,6 +78,11 @@ pushd ~/Android/Sdk/emulator
 #
 ./emulator -avd Pixel_6_Pro_API_33 -wipe-data
 
+# Don't know if this works but here are instructions to use the emulator without 
+# having to install android studio
+
+
+
 # ---------------------------------------------------------------
 # Kali linux reference
 # ---------------------------------------------------------------
