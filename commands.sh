@@ -42,8 +42,22 @@ veracrypt -d volume.hc
 #
 veracrypt -d
 
+# Veracrypt container creation
+#
+veracrypt -t -c ~/Documents/Encrypted.vc
+
+# Veracrypt mounting
+#
+veracrypt ~/Documents/Encrypted.vc /media/veracrypt1
+
+# Veracrypt soft linking
+#
+pushd ~/Documents
+ln -s /media/veracrypt1 Encrypted
+popd
+
 # ---------------------------------------------------------------
-# Android emulator commands
+# Android emulator reference
 # ---------------------------------------------------------------
 pushd ~/Android/Sdk/emulator
 ./emulator -list-avds
@@ -64,27 +78,8 @@ pushd ~/Android/Sdk/emulator
 #
 ./emulator -avd Pixel_6_Pro_API_33 -wipe-data
 
-
-# Aliases pre-configured
-# 
-git clone https://github.com/stanmyman99/aliases.git
-
-# Veracrypt container creation
-#
-veracrypt -t -c ~/Documents/Encrypted.vc
-
-# Veracrypt mounting
-#
-veracrypt ~/Documents/Encrypted.vc /media/veracrypt1
-
-# Veracrypt soft linking
-#
-pushd ~/Documents
-ln -s /media/veracrypt1 Encrypted
-popd
-
 # ---------------------------------------------------------------
-# Kali linux commands
+# Kali linux reference
 # ---------------------------------------------------------------
 
 # Build the driver for the TP-Link AC600
