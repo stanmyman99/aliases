@@ -80,24 +80,27 @@ git add
 # ---------------------------------------------------------------
 # Android emulator reference
 # ---------------------------------------------------------------
-pushd ~/Android/Sdk/emulator
-./emulator -list-avds
+~/Android/Sdk/emulator/emulator -list-avds
 
 # Boot the device, save changes
 #
-./emulator -avd Pixel_6_Pro_API_33
+~/Android/Sdk/emulator/emulator -avd OSINT
 
 # Boot the devide from off state and save changes
 # 
-./emulator -avd Pixel_6_Pro_API_33 -no-snapshot-load
+~/Android/Sdk/emulator/emulator -avd OSINT -no-snapshot-load
 
 # Boot the device but don't save changes
 #
-./emulator -avd Pixel_6_Pro_API_33 -no-snapshot-save
+~/Android/Sdk/emulator/emulator -avd OSINT -no-snapshot-save
 
 # Reset the device to factory settings
 #
-./emulator -avd Pixel_6_Pro_API_33 -wipe-data
+~/Android/Sdk/emulator/emulator -avd OSINT -wipe-data
+
+# Boot the device, save changes, force GPU accerlation from the host
+#
+~/Android/Sdk/emulator/emulator -avd OSINT -gpu host
 
 # ---------------------------------------------------------------
 # Kali linux reference
