@@ -3,4 +3,4 @@ alias avscan='clamscan -r -i /'
 alias ipa="ifconfig | grep inet"
 alias mountvc='veracrypt ~/Documents/Encrypted.vc /media/veracrypt1'
 alias reference='cat ~/Code/aliases/reference.sh'
-alias pixel='~/Android/Sdk/emulator/emulator -gpu host -avd OSINT'
+alias pixel='~/Android/Sdk/emulator/emulator -avd OSINT'
