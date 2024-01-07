@@ -2,18 +2,6 @@
 # Veracrypt reference
 # ---------------------------------------------------------------
 
-# Building veracrypt
-#
-pushd ~
-mkdir ~/Apps/veracrypt
-cd ~/Apps/veracrypt
-wget https://www.veracrypt.fr/code/VeraCrypt/snapshot/VeraCrypt_1.26.7.tar.gz
-sudo apt install g++ libfuse-dev pkg-config yasm libwxbase3.0-dev
-tar -xvf VeraCrypt-VeraCrypt_1.26.7.tar.gz
-cd VeraCrypt-VeraCrypt_1.26.7/src
-make NOGUI=1
-sudo cp Main/veracrypt /usr/bin
-
 # Create a new volume:
 #
 veracrypt -t -c
