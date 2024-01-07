@@ -57,6 +57,39 @@ ln -s /media/veracrypt1 Encrypted
 popd
 
 # ---------------------------------------------------------------
+# Git reference
+# ---------------------------------------------------------------
+# clone a repository
+# 
+git clone https://github.com/stanmyman99/aliases
+
+# update a repository
+# 
+git pull
+
+# set email and user name
+#
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+
+# see where a repository came from
+#
+git remote get-url origin 
+
+# see what changes are uncommitted
+#
+git status
+
+# commit and push everything that has changed
+#
+git commit -a -m "Message for the commit"
+git push
+
+# add a specific file to the next commit
+#
+git add
+
+# ---------------------------------------------------------------
 # Android emulator reference
 # ---------------------------------------------------------------
 pushd ~/Android/Sdk/emulator
@@ -77,11 +110,6 @@ pushd ~/Android/Sdk/emulator
 # Reset the device to factory settings
 #
 ./emulator -avd Pixel_6_Pro_API_33 -wipe-data
-
-# Don't know if this works but here are instructions to use the emulator without 
-# having to install android studio
-
-
 
 # ---------------------------------------------------------------
 # Kali linux reference
