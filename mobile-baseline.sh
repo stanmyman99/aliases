@@ -10,8 +10,8 @@ wget --no-check-certificate --content-disposition https://github.com/ImranR98/Ob
 
 # Mullvad VPN
 #
-wget --no-check-certificate --content-disposition hhttps://mullvad.net/en/download/app/apk/latest
-wget --no-check-certificate --content-disposition hhttps://mullvad.net/en/download/app/apk/latest/signature
+wget --no-check-certificate --content-disposition https://mullvad.net/en/download/app/apk/latest
+wget --no-check-certificate --content-disposition https://mullvad.net/en/download/app/apk/latest/signature
 
 # Tor browser
 #
