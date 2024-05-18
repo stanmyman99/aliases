@@ -120,3 +120,13 @@ sudo make dkms_install
 #
 nmcli dev wifi
 
+# ---------------------------------------------------------------
+# Bash reference
+# ---------------------------------------------------------------
+mkdir -p ~/build
+cd ~/build
+git clone https://github.com/christitustech/mybash
+cd mybash
+./setup.sh
+
+
