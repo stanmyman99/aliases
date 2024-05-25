@@ -18,24 +18,15 @@ alias gpt="ollama run llama3"
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
-export LS_COLORS='no=00:fi=00:di=00;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=>
+export LS_COLORS='no=00:fi=00:di=00;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=>'
 #export GREP_OPTIONS='--color=auto' #deprecated
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
-# Color for manpages in less makes manpages a little easier to read
-# export LESS_TERMCAP_mb=$'\E[01;31m'
-# export LESS_TERMCAP_md=$'\E[01;31m'
-# export LESS_TERMCAP_me=$'\E[0m'
-# export LESS_TERMCAP_se=$'\E[0m'
-# export LESS_TERMCAP_so=$'\E[01;44;33m'
-# export LESS_TERMCAP_ue=$'\E[0m'
-# export LESS_TERMCAP_us=$'\E[01;32m'
-
 # alias to show the date
 alias da='date "+%Y-%m-%d %A %T %Z"'
 
-# Alias's to modified commands
+# Aliases to modified commands
 alias cp='cp -i'
 alias mv='mv -i'
 alias ren='mv -i'
@@ -44,7 +35,6 @@ alias mkdir='mkdir -p'
 alias ps='ps auxf'
 alias ping='ping -c 10'
 alias less='less -R'
-alias cls='clear'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
 
@@ -266,24 +256,6 @@ ver() {
                         fi
                         ;;
         esac
-}
-
-# IP address lookup
-alias whatismyip="whatsmyip"
-function whatsmyip ()
-{
-        # Internal IP Lookup.
-        if [ -e /sbin/ip ]; then
-                echo -n "Internal IP: "
-                /sbin/ip addr show wlan0 | grep "inet " | awk -F: '{print $1}' | awk '{pri>
-        else
-                echo -n "Internal IP: "
-                /sbin/ifconfig wlan0 | grep "inet " | awk -F: '{print $1} |' | awk '{print>
-        fi
-
-        # External IP Lookup
-        echo -n "External IP: "
-        curl -s ifconfig.me
 }
 
 # Trim leading and trailing spaces (for scripts)
